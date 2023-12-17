@@ -1,0 +1,63 @@
+CRITICAL - 2023-12-10 11:11:37 --> Class 'CodeIgniter\Files\CSVReader' not found
+in APPPATH\Controllers\traitement.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 11:26:57 --> Call to undefined method League\Csv\Reader::each()
+in APPPATH\Controllers\traitement.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 11:26:59 --> Call to undefined method League\Csv\Reader::each()
+in APPPATH\Controllers\traitement.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 11:28:54 --> Undefined index: Code commune
+in APPPATH\Controllers\traitement.php on line 94.
+ 1 APPPATH\Controllers\traitement.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Code commune', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 94, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 11:46:20 --> Call to undefined method League\Csv\Reader::setLimit()
+in APPPATH\Controllers\traitement.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 12:46:42 --> Undefined variable: limit
+in APPPATH\Controllers\traitement.php on line 99.
+ 1 APPPATH\Controllers\traitement.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: limit', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 12:46:46 --> Undefined variable: limit
+in APPPATH\Controllers\traitement.php on line 99.
+ 1 APPPATH\Controllers\traitement.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: limit', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-10 16:19:13 --> syntax error, unexpected ''latitude'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Controllers\traitement.php on line 117.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\traitement')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\traitement')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\traitement')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\traitement', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')

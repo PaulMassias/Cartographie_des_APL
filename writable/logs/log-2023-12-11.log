@@ -1,0 +1,12 @@
+CRITICAL - 2023-12-11 19:52:43 --> Undefined variable: marqueurs
+in APPPATH\Views\welcome_message.php on line 40.
+ 1 APPPATH\Views\welcome_message.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marqueurs', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Views\\welcome_message.php', 40, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')

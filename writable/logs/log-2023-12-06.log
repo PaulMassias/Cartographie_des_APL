@@ -1,0 +1,116 @@
+CRITICAL - 2023-12-06 14:58:11 --> file(C:\Users\D4rks\Desktop\TestInstallCI4\project-root\writable\nettoye.csv): failed to open stream: No such file or directory
+in APPPATH\Controllers\traitement.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\nettoye.csv): failed to open stream: No such file or directory', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 16, [...])
+ 2 APPPATH\Controllers\traitement.php(16): file('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\nettoye.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 14:59:02 --> Undefined index: city_code
+in APPPATH\Controllers\traitement.php on line 39.
+ 1 APPPATH\Controllers\traitement.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: city_code', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 14:59:12 --> file(C:\Users\D4rks\Desktop\TestInstallCI4\project-root\writable\../../public/nettoye.csv): failed to open stream: No such file or directory
+in APPPATH\Controllers\traitement.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\../../public/nettoye.csv): failed to open stream: No such file or directory', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 16, [...])
+ 2 APPPATH\Controllers\traitement.php(16): file('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\../../public/nettoye.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 14:59:35 --> file(C:\Users\D4rks\Desktop\TestInstallCI4\project-root\writable\/public/nettoye.csv): failed to open stream: No such file or directory
+in APPPATH\Controllers\traitement.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\/public/nettoye.csv): failed to open stream: No such file or directory', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 16, [...])
+ 2 APPPATH\Controllers\traitement.php(16): file('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\/public/nettoye.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:00:04 --> file(C:\Users\D4rks\Desktop\TestInstallCI4\project-root\writable\\public\nettoye.csv): failed to open stream: No such file or directory
+in APPPATH\Controllers\traitement.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\\\public\\nettoye.csv): failed to open stream: No such file or directory', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 16, [...])
+ 2 APPPATH\Controllers\traitement.php(16): file('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\\\public\\nettoye.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:00:15 --> file(C:\Users\D4rks\Desktop\TestInstallCI4\project-root\writable\public\nettoye.csv): failed to open stream: No such file or directory
+in APPPATH\Controllers\traitement.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\public\\nettoye.csv): failed to open stream: No such file or directory', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 16, [...])
+ 2 APPPATH\Controllers\traitement.php(16): file('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\public\\nettoye.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:00:41 --> file(C:\Users\D4rks\Desktop\TestInstallCI4\project-root\writable\public/nettoye.csv): failed to open stream: No such file or directory
+in APPPATH\Controllers\traitement.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\public/nettoye.csv): failed to open stream: No such file or directory', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 16, [...])
+ 2 APPPATH\Controllers\traitement.php(16): file('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\writable\\public/nettoye.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:02:19 --> Undefined index: city_code
+in APPPATH\Controllers\traitement.php on line 39.
+ 1 APPPATH\Controllers\traitement.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: city_code', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:08:11 --> Undefined index: department_name
+in APPPATH\Controllers\traitement.php on line 48.
+ 1 APPPATH\Controllers\traitement.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: department_name', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:10:08 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\traitement.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 15:36:04 --> Use of undefined constant L - assumed 'L' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\traitement.php on line 52.
+ 1 APPPATH\Controllers\traitement.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant L - assumed \'L\' (this will throw an Error in a future version of PHP)', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:36:28 --> Use of undefined constant L - assumed 'L' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\traitement.php on line 52.
+ 1 APPPATH\Controllers\traitement.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant L - assumed \'L\' (this will throw an Error in a future version of PHP)', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 15:51:17 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+in APPPATH\Views\Carto.php on line 60.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Carto', [], true)
+ 3 APPPATH\Controllers\traitement.php(59): view('Carto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-06 16:47:08 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\traitement.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 16:52:58 --> Maximum execution time of 200 seconds exceeded
+in APPPATH\Controllers\traitement.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 17:02:06 --> Maximum execution time of 500 seconds exceeded
+in APPPATH\Controllers\traitement.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
