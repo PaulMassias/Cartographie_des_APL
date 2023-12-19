@@ -1,0 +1,882 @@
+CRITICAL - 2023-12-17 13:55:21 --> syntax error, unexpected '}'
+in APPPATH\Controllers\traitement.php on line 110.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\traitement')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\traitement')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\traitement')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\traitement', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 14:18:48 --> Class 'App\Model\VilleModel' not found
+in APPPATH\Controllers\traitement.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 14:19:30 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 14:19:30 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:15:15 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:15:15 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:15:36 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:15:36 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:16:43 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:16:43 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:21:18 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:21:18 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:26:15 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:26:15 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:33:29 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:33:29 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:44:49 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:44:49 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:48:22 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:48:22 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:52:27 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:52:27 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 15:56:10 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(NULL)
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData(Array, true)
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#12 {main}
+CRITICAL - 2023-12-17 15:56:10 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Postgre\Connection.php(228): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1858): CodeIgniter\Database\Postgre\Connection->escape(null)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2188): CodeIgniter\Database\BaseBuilder->setData([...], true)
+ 4 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 5 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 6 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:00:16 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:00:16 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:05:58 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:05:58 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:08:29 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:08:29 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:08:33 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:08:33 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:28:51 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:28:51 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:30:16 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:30:16 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:34:04 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:34:04 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:34:37 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:34:37 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:34:53 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:34:53 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:36:28 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:36:28 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:38:46 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:38:46 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:39:50 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:39:50 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:45:18 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:45:18 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:45:26 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:45:26 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:45:39 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:45:39 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:45:48 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version(...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#8 {main}
+CRITICAL - 2023-12-17 16:45:48 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(10): CodeIgniter\Database\BaseConnection->query('SELECT version()')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 16:51:55 --> Return value of App\Controllers\Home::index() must be of the type string, none returned
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 16:54:05 --> Return value of App\Controllers\Home::index() must be an instance of App\Controllers\none, none returned
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 16:54:51 --> ErrorException: pg_query(): Query failed: ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « insee_code »
+DETAIL:  La ligne en échec contient (null, null, null, null, null) in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\Users\\D4rks\\...', 187, Array)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(187): pg_query(Resource id #156, 'INSERT INTO "Vi...')
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "Vi...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "Vi...')
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Vi...', NULL, false)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch(Array)
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#14 {main}
+CRITICAL - 2023-12-17 16:54:51 --> pg_query(): Query failed: ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « insee_code »
+DETAIL:  La ligne en échec contient (null, null, null, null, null)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Ville"("city_code", "department_number", "insee_code", "latitude", "longitude")
+VALUES (NULL,NULL,NULL,NULL,NULL)
+', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\traitement.php(107): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 16:59:36 --> Array to string conversion
+in APPPATH\Controllers\traitement.php on line 95.
+ 1 APPPATH\Controllers\traitement.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 17:00:08 --> Cannot use [] for reading
+in APPPATH\Controllers\traitement.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-17 17:00:15 --> Array to string conversion
+in APPPATH\Controllers\traitement.php on line 95.
+ 1 APPPATH\Controllers\traitement.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 17:03:10 --> Undefined index: insee_code
+in APPPATH\Controllers\traitement.php on line 100.
+ 1 APPPATH\Controllers\traitement.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: insee_code', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 17:06:58 --> Undefined index: insee_code
+in APPPATH\Controllers\traitement.php on line 100.
+ 1 APPPATH\Controllers\traitement.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: insee_code', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 17:08:58 --> Undefined index: insee_code
+in APPPATH\Controllers\traitement.php on line 100.
+ 1 APPPATH\Controllers\traitement.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: insee_code', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 17:12:02 --> Undefined index: insee_code
+in APPPATH\Controllers\traitement.php on line 99.
+ 1 APPPATH\Controllers\traitement.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: insee_code', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-17 17:12:32 --> Undefined index: cities
+in APPPATH\Controllers\traitement.php on line 99.
+ 1 APPPATH\Controllers\traitement.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cities', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 17:19:15 --> ErrorException: pg_query(): Query failed: ERREUR:  une instruction insert ou update sur la table « Ville » viole la contrainte de clé
+étrangère « Ville_department_number_fkey »
+DETAIL:  La clé (department_number)=(1) n'est pas présente dans la table « Departement ». in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\Users\\D4rks\\...', 187, Array)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(187): pg_query(Resource id #163, 'INSERT INTO "Vi...')
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "Vi...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "Vi...')
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Vi...', NULL, false)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(179): CodeIgniter\BaseModel->insertBatch(Array)
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#14 {main}
+CRITICAL - 2023-12-17 17:19:15 --> pg_query(): Query failed: ERREUR:  une instruction insert ou update sur la table « Ville » viole la contrainte de clé
+étrangère « Ville_department_number_fkey »
+DETAIL:  La clé (department_number)=(1) n'est pas présente dans la table « Departement ».
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Ville"("city_code", "department_number", "insee_code", "latitude", "longitude")
+VALUES (\'l abergement clemenciat\',\'01\',\'01001\',\'46.153721024\',\'4.925850148\'), (\'l abergement de varey\',\'01\',\'01002\',\'46.009605679\',\'5.428087796\'), (\'amberieu en bugey\',\'01\',\'01004\',\'45.961048852\',\'5.372275427\'), (\'amberieux en dombes\',\'01\',\'01005\',\'45.99616357\',\'4.911967138\'), (\'ambleon\',\'01\',\'01006\',\'45.749886304\',\'5.594584599\'), (\'ambronay\',\'01\',\'01007\',\'46.005690539\',\'5.357748739\'), (\'ambutrix\',\'01\',\'01008\',\'45.936683389\',\'5.332446671\'), (\'andert et condon\',\'01\',\'01009\',\'45.787194157\',\'5.657799976\'), (\'anglefort\',\'01\',\'01010\',\'45.909091467\',\'5.795056945\'), (\'apremont\',\'01\',\'01011\',\'46.205877513\',\'5.657980818\'), (\'aranc\',\'01\',\'01012\',\'46.001293319\',\'5.510946399\'), (\'arandas\',\'01\',\'01013\',\'45.890233979\',\'5.498924738\'), (\'arbent\',\'01\',\'01014\',\'46.283607621\',\'5.690755574\'), (\'arboys en bugey\',\'01\',\'01015\',\'45.712796712\',\'5.64167722\'), (\'arbigny\',\'01\',\'01016\',\'46.477598582\',\'4.960100975\'), (\'argis\',\'01\',\'01017\',\'45.933504727\',\'5.482593252\'), (\'armix\',\'01\',\'01019\',\'45.854492231\',\'5.583031315\'), (\'ars sur formans\',\'01\',\'01021\',\'45.993537592\',\'4.821960428\'), (\'artemare\',\'01\',\'01022\',\'45.869624164\',\'5.690088298\'), (\'asnieres sur saone\',\'01\',\'01023\',\'46.385206065\',\'4.883700297\'), (\'attignat\',\'01\',\'01024\',\'46.286061273\',\'5.179817579\'), (\'bage dommartin\',\'01\',\'01025\',\'46.327468413\',\'4.966993244\'), (\'bage le chatel\',\'01\',\'01026\',\'46.308270333\',\'4.9298452820000005\'), (\'balan\',\'01\',\'01027\',\'45.830979009\',\'5.108003865\'), (\'baneins\',\'01\',\'01028\',\'46.114061723\',\'4.901684997\'), (\'beaupont\',\'01\',\'01029\',\'46.428649695\',\'5.260337095\'), (\'beauregard\',\'01\',\'01030\',\'46.000721971\',\'4.756657208\'), (\'bellignat\',\'01\',\'01031\',\'46.238150086\',\'5.635913808\'), (\'beligneux\',\'01\',\'01032\',\'45.859311798\',\'5.140369014\'), (\'valserhone\',\'01\',\'01033\',\'46.124111549\',\'5.796482369\'), (\'belley\',\'01\',\'01034\',\'45.749882762\',\'5.683910513\'), (\'belleydoux\',\'01\',\'01035\',\'46.253334104\',\'5.785067125\'), (\'valromey sur seran\',\'01\',\'01036\',\'45.918185011\',\'5.6568848240000005\'), (\'benonces\',\'01\',\'01037\',\'45.838144557\',\'5.483119825\'), (\'beny\',\'01\',\'01038\',\'46.319387367\',\'5.282567061\'), (\'beon\',\'01\',\'01039\',\'45.856484934\',\'5.752398693\'), (\'bereziat\',\'01\',\'01040\',\'46.367707398\',\'5.039989868\'), (\'bettant\',\'01\',\'01041\',\'45.937720512\',\'5.365979513\'), (\'bey\',\'01\',\'01042\',\'46.219516565\',\'4.846226251\'), (\'beynost\',\'01\',\'01043\',\'45.839476518\',\'4.99743421\'), (\'billiat\',\'01\',\'01044\',\'46.079406273\',\'5.765548016\'), (\'birieux\',\'01\',\'01045\',\'45.953187919\',\'5.037212561\'), (\'biziat\',\'01\',\'01046\',\'46.226338767\',\'4.941082276\'), (\'blyes\',\'01\',\'01047\',\'45.847070433\',\'5.251661374\'), (\'la boisse\',\'01\',\'01049\',\'45.844628451\',\'5.028332382\'), (\'boissey\',\'01\',\'01050\',\'46.373043501\',\'4.998844748\'), (\'bolozon\',\'01\',\'01051\',\'46.196340526\',\'5.470453285\'), (\'bouligneux\',\'01\',\'01052\',\'46.023044402\',\'4.992313384\'), (\'bourg en bresse\',\'01\',\'01053\',\'46.205013838\',\'5.245593605\'), (\'bourg st christophe\',\'01\',\'01054\',\'45.886247155\',\'5.143599073\'), (\'boyeux st jerome\',\'01\',\'01056\',\'46.036053911\',\'5.463119438\'), (\'boz\',\'01\',\'01057\',\'46.405530214\',\'4.913724\'), (\'bregnier cordon\',\'01\',\'01058\',\'45.641317771\',\'5.616806128\'), (\'brenod\',\'01\',\'01060\',\'46.075616229\',\'5.614402984\'), (\'brens\',\'01\',\'01061\',\'45.713937941\',\'5.689263883\'), (\'bressolles\',\'01\',\'01062\',\'45.86942733\',\'5.101495053\'), (\'brion\',\'01\',\'01063\',\'46.168166789\',\'5.546506151\'), (\'briord\',\'01\',\'01064\',\'45.770630041\',\'5.485482939\'), (\'buellas\',\'01\',\'01065\',\'46.210586509\',\'5.145274303\'), (\'la burbanche\',\'01\',\'01066\',\'45.859942755\',\'5.545817567\'), (\'ceignes\',\'01\',\'01067\',\'46.125618677\',\'5.495155483\'), (\'cerdon\',\'01\',\'01068\',\'46.071947147\',\'5.476107384\'), (\'certines\',\'01\',\'01069\',\'46.13346457\',\'5.262432008\'), (\'cessy\',\'01\',\'01071\',\'46.316089437\',\'6.078030245\'), (\'ceyzeriat\',\'01\',\'01072\',\'46.183403875\',\'5.319678283\'), (\'ceyzerieu\',\'01\',\'01073\',\'45.833507381\',\'5.719105551\'), (\'chalamont\',\'01\',\'01074\',\'46.007577226\',\'5.169368719\'), (\'chaleins\',\'01\',\'01075\',\'46.03393089\',\'4.798634776\'), (\'chaley\',\'01\',\'01076\',\'45.954366591\',\'5.536967199\'), (\'challes la montagne\',\'01\',\'01077\',\'46.122300221\',\'5.457513206\'), (\'challex\',\'01\',\'01078\',\'46.176874001\',\'5.971497204\'), (\'champagne en valromey\',\'01\',\'01079\',\'45.93196511\',\'5.6931331190000005\'), (\'champdor corcelles\',\'01\',\'01080\',\'46.028576252\',\'5.5880089040000005\'), (\'champfromier\',\'01\',\'01081\',\'46.220471277\',\'5.822270927\'), (\'chanay\',\'01\',\'01082\',\'46.005822693\',\'5.768694464\'), (\'chaneins\',\'01\',\'01083\',\'46.093517041\',\'4.854300227\'), (\'chanoz chatenay\',\'01\',\'01084\',\'46.185700461\',\'5.028865152\'), (\'la chapelle du chatelard\',\'01\',\'01085\',\'46.073407767\',\'5.021766424\'), (\'charix\',\'01\',\'01087\',\'46.185606234\',\'5.680768417\'), (\'charnoz sur ain\',\'01\',\'01088\',\'45.874182776\',\'5.221971236\'), (\'chateau gaillard\',\'01\',\'01089\',\'45.972849668\',\'5.307314958\'), (\'chatenay\',\'01\',\'01090\',\'46.025881406\',\'5.204590322\'), (\'chatillon la palud\',\'01\',\'01092\',\'45.974829804\',\'5.241474204\'), (\'chatillon sur chalaronne\',\'01\',\'01093\',\'46.122927177\',\'4.957950327\'), (\'chavannes sur reyssouze\',\'01\',\'01094\',\'46.438056692\',\'5.006564061\'), (\'nivigne et suran\',\'01\',\'01095\',\'46.283759087\',\'5.426610623\'), (\'chaveyriat\',\'01\',\'01096\',\'46.199364763\',\'5.056028558\'), (\'chazey bons\',\'01\',\'01098\',\'45.800812797\',\'5.673644385\'), (\'chazey sur ain\',\'01\',\'01099\',\'45.893242753\',\'5.254787754\'), (\'cheignieu la balme\',\'01\',\'01100\',\'45.822895805\',\'5.604830013\'), (\'chevillard\',\'01\',\'01101\',\'46.110541974\',\'5.581393787\'), (\'chevroux\',\'01\',\'01102\',\'46.382465302\',\'4.96295233\'), (\'chevry\',\'01\',\'01103\',\'46.283052925\',\'6.047291131\'), (\'chezery forens\',\'01\',\'01104\',\'46.222560403\',\'5.872426209\'), (\'civrieux\',\'01\',\'01105\',\'45.922942274\',\'4.88661781\'), (\'cize\',\'01\',\'01106\',\'46.200571572\',\'5.450819845\'), (\'cleyzieu\',\'01\',\'01107\',\'45.902697686\',\'5.432785798\'), (\'coligny\',\'01\',\'01108\',\'46.386677691\',\'5.330424959\'), (\'collonges\',\'01\',\'01109\',\'46.14254416\',\'5.8997020110000005\'), (\'colomieu\',\'01\',\'01110\',\'45.736541941\',\'5.627101669\')
+', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\traitement.php(179): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 18:10:50 --> ErrorException: pg_query(): Query failed: ERREUR:  syntaxe en entrée invalide pour l'entier : « 2A »
+LINE 2: ...29','29302','48.27446138','-4.107614705'), ('afa','2A','2A00...
+                                                             ^ in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\Users\\D4rks\\...', 187, Array)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(187): pg_query(Resource id #163, 'INSERT INTO "Vi...')
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "Vi...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "Vi...')
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Vi...', NULL, false)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(179): CodeIgniter\BaseModel->insertBatch(Array)
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#14 {main}
+CRITICAL - 2023-12-17 18:10:50 --> pg_query(): Query failed: ERREUR:  syntaxe en entrée invalide pour l'entier : « 2A »
+LINE 2: ...29','29302','48.27446138','-4.107614705'), ('afa','2A','2A00...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Ville"("city_code", "department_number", "insee_code", "latitude", "longitude")
+VALUES (\'st pol de leon\',\'29\',\'29259\',\'48.672617829\',\'-3.988959418\'), (\'st renan\',\'29\',\'29260\',\'48.426041807\',\'-4.62400497\'), (\'st rivoal\',\'29\',\'29261\',\'48.34916444\',\'-3.987758119\'), (\'st sauveur\',\'29\',\'29262\',\'48.44826592\',\'-4.000249304\'), (\'st segal\',\'29\',\'29263\',\'48.235791501\',\'-4.077581926\'), (\'st servais\',\'29\',\'29264\',\'48.515423871\',\'-4.158215783\'), (\'ste seve\',\'29\',\'29265\',\'48.560269207\',\'-3.889132251\'), (\'st thegonnec loc eguiner\',\'29\',\'29266\',\'48.502271639\',\'-3.940488625\'), (\'st thois\',\'29\',\'29267\',\'48.153395555\',\'-3.906148338\'), (\'st thonan\',\'29\',\'29268\',\'48.47710363\',\'-4.322689802\'), (\'st thurien\',\'29\',\'29269\',\'47.956751438\',\'-3.619964902\'), (\'st urbain\',\'29\',\'29270\',\'48.397067074\',\'-4.222058635\'), (\'st vougay\',\'29\',\'29271\',\'48.588844328\',\'-4.146285158\'), (\'st yvi\',\'29\',\'29272\',\'47.959951178\',\'-3.93884767\'), (\'santec\',\'29\',\'29273\',\'48.699878192\',\'-4.031586179\'), (\'scaer\',\'29\',\'29274\',\'48.027810505\',\'-3.730246087\'), (\'scrignac\',\'29\',\'29275\',\'48.426574545\',\'-3.668330915\'), (\'sibiril\',\'29\',\'29276\',\'48.66430783\',\'-4.071763438\'), (\'sizun\',\'29\',\'29277\',\'48.394863914\',\'-4.0450954\'), (\'spezet\',\'29\',\'29278\',\'48.186108198\',\'-3.691978915\'), (\'taule\',\'29\',\'29279\',\'48.604497813\',\'-3.899102308\'), (\'telgruc sur mer\',\'29\',\'29280\',\'48.233487792\',\'-4.357264699\'), (\'tourch\',\'29\',\'29281\',\'48.027114963\',\'-3.823394056\'), (\'trebabu\',\'29\',\'29282\',\'48.370596391\',\'-4.732277761\'), (\'treffiagat\',\'29\',\'29284\',\'47.804975991\',\'-4.26008324\'), (\'treflaouenan\',\'29\',\'29285\',\'48.626947977\',\'-4.09875115\'), (\'treflevenez\',\'29\',\'29286\',\'48.415558545\',\'-4.175815799\'), (\'treflez\',\'29\',\'29287\',\'48.626484982\',\'-4.257297839\'), (\'tregarantec\',\'29\',\'29288\',\'48.549427953\',\'-4.289530514\'), (\'tregarvan\',\'29\',\'29289\',\'48.237715504\',\'-4.231047173\'), (\'treglonou\',\'29\',\'29290\',\'48.547560955\',\'-4.547494432\'), (\'tregourez\',\'29\',\'29291\',\'48.105826868\',\'-3.871582096\'), (\'treguennec\',\'29\',\'29292\',\'47.884821497\',\'-4.339132034\'), (\'tregunc\',\'29\',\'29293\',\'47.838210908\',\'-3.841064391\'), (\'le trehou\',\'29\',\'29294\',\'48.3938718\',\'-4.129533872\'), (\'tremaouezan\',\'29\',\'29295\',\'48.508702664\',\'-4.255796471\'), (\'tremeoc\',\'29\',\'29296\',\'47.90728335\',\'-4.219951554\'), (\'tremeven\',\'29\',\'29297\',\'47.902151396\',\'-3.52501355\'), (\'treogat\',\'29\',\'29298\',\'47.909598454\',\'-4.341089103\'), (\'treouergat\',\'29\',\'29299\',\'48.494960385\',\'-4.601867967\'), (\'le trevoux\',\'29\',\'29300\',\'47.888587443\',\'-3.657029043\'), (\'trezilide\',\'29\',\'29301\',\'48.610049091\',\'-4.084482108\'), (\'pont de buis les quimerch\',\'29\',\'29302\',\'48.27446138\',\'-4.107614705\'), (\'afa\',\'2A\',\'2A001\',\'41.984099158\',\'8.798384636\'), (\'ajaccio\',\'2A\',\'2A004\',\'41.934723456\',\'8.700937555\'), (\'alata\',\'2A\',\'2A006\',\'41.973629147\',\'8.73166165\'), (\'albitreccia\',\'2A\',\'2A008\',\'41.860660612\',\'8.8777584\'), (\'altagene\',\'2A\',\'2A011\',\'41.709341198\',\'9.077320052\'), (\'ambiegna\',\'2A\',\'2A014\',\'42.087881677\',\'8.77334639\'), (\'appietto\',\'2A\',\'2A017\',\'42.00345914\',\'8.733864943\'), (\'arbellara\',\'2A\',\'2A018\',\'41.671484206\',\'8.989411005000001\'), (\'arbori\',\'2A\',\'2A019\',\'42.128066991\',\'8.795671346\'), (\'argiusta moriccio\',\'2A\',\'2A021\',\'41.815418536\',\'9.032650196\'), (\'arro\',\'2A\',\'2A022\',\'42.096711741\',\'8.80432428\'), (\'aullene\',\'2A\',\'2A024\',\'41.807022288\',\'9.092922973\'), (\'azilone ampaza\',\'2A\',\'2A026\',\'41.870638716\',\'9.016697474\'), (\'azzana\',\'2A\',\'2A027\',\'42.112842887\',\'8.931331876\'), (\'balogna\',\'2A\',\'2A028\',\'42.187366095\',\'8.754098668\'), (\'bastelica\',\'2A\',\'2A031\',\'41.988202996\',\'9.048770899\'), (\'bastelicaccia\',\'2A\',\'2A032\',\'41.935379337\',\'8.836589723\'), (\'belvedere campomoro\',\'2A\',\'2A035\',\'41.617484765\',\'8.823760312000001\'), (\'bilia\',\'2A\',\'2A038\',\'41.621985218\',\'8.90490826\'), (\'bocognano\',\'2A\',\'2A040\',\'42.088739774\',\'9.070832593\'), (\'bonifacio\',\'2A\',\'2A041\',\'41.435022724\',\'9.185682637\'), (\'calcatoggio\',\'2A\',\'2A048\',\'42.028464254\',\'8.738320811\'), (\'campo\',\'2A\',\'2A056\',\'41.890771999\',\'9.000227322\'), (\'cannelle\',\'2A\',\'2A060\',\'42.047811428\',\'8.816968797\'), (\'carbini\',\'2A\',\'2A061\',\'41.6758019\',\'9.159962103\'), (\'carbuccia\',\'2A\',\'2A062\',\'42.030469338\',\'8.936785201\'), (\'cardo torgia\',\'2A\',\'2A064\',\'41.852428162\',\'8.97181311\'), (\'cargese\',\'2A\',\'2A065\',\'42.15446097\',\'8.62688662\'), (\'cargiaca\',\'2A\',\'2A066\',\'41.732245332\',\'9.040954726\'), (\'casaglione\',\'2A\',\'2A070\',\'42.069543326\',\'8.760405186\'), (\'casalabriva\',\'2A\',\'2A071\',\'41.759907282\',\'8.92558467\'), (\'cauro\',\'2A\',\'2A085\',\'41.903933079\',\'8.893570079\'), (\'ciamannacce\',\'2A\',\'2A089\',\'41.973021385\',\'9.138412717\'), (\'coggia\',\'2A\',\'2A090\',\'42.112405574\',\'8.735278053\'), (\'cognocoli monticchi\',\'2A\',\'2A091\',\'41.802400595\',\'8.865927867\'), (\'conca\',\'2A\',\'2A092\',\'41.753235695\',\'9.330135565\'), (\'corrano\',\'2A\',\'2A094\',\'41.881942483\',\'9.071029024\'), (\'coti chiavari\',\'2A\',\'2A098\',\'41.769201599\',\'8.752878504\'), (\'cozzano\',\'2A\',\'2A099\',\'41.933423808\',\'9.18627726\'), (\'cristinacce\',\'2A\',\'2A100\',\'42.243558113\',\'8.855476205\'), (\'cuttoli corticchiato\',\'2A\',\'2A103\',\'41.976786839\',\'8.883279935000001\'), (\'eccica suarella\',\'2A\',\'2A104\',\'41.922967405\',\'8.894632094\'), (\'evisa\',\'2A\',\'2A108\',\'42.285205276\',\'8.820545759\'), (\'figari\',\'2A\',\'2A114\',\'41.516178304\',\'9.120206954\'), (\'foce\',\'2A\',\'2A115\',\'41.622016364\',\'9.036079\'), (\'forciolo\',\'2A\',\'2A117\',\'41.848098218\',\'9.015462121\'), (\'fozzano\',\'2A\',\'2A118\',\'41.698563612\',\'8.987659621\'), (\'frasseto\',\'2A\',\'2A119\',\'41.920065663\',\'9.039339609\'), (\'giuncheto\',\'2A\',\'2A127\',\'41.586272265\',\'8.957309352\'), (\'granace\',\'2A\',\'2A128\',\'41.640462631\',\'9.011964568\'), (\'grossa\',\'2A\',\'2A129\',\'41.602318096\',\'8.86442058\'), (\'grosseto prugna\',\'2A\',\'2A130\',\'41.881679666\',\'8.8180744\'), (\'guagno\',\'2A\',\'2A131\',\'42.178286555\',\'8.98392941\'), (\'guarguale\',\'2A\',\'2A132\',\'41.827608574\',\'8.927786507\'), (\'guitera les bains\',\'2A\',\'2A133\',\'41.922370397\',\'9.078574208\'), (\'lecci\',\'2A\',\'2A139\',\'41.665982123\',\'9.318734052\'), (\'letia\',\'2A\',\'2A141\',\'42.214914413\',\'8.87695352\')
+', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\traitement.php(179): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+ERROR - 2023-12-17 18:21:02 --> ErrorException: pg_query(): Query failed: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « Ville_pkey »
+DETAIL:  La clé « (insee_code)=(1001) » existe déjà. in C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\Users\\D4rks\\...', 187, Array)
+#1 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(187): pg_query(Resource id #163, 'INSERT INTO "Vi...')
+#2 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "Vi...')
+#3 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "Vi...')
+#4 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Vi...', NULL, false)
+#5 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#6 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#7 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\BaseModel.php(880): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#8 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\app\Controllers\traitement.php(178): CodeIgniter\BaseModel->insertBatch(Array)
+#9 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+#10 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+#11 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\D4rks\Desktop\TestInstallCI4\project-root\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\...')
+#14 {main}
+CRITICAL - 2023-12-17 18:21:02 --> pg_query(): Query failed: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « Ville_pkey »
+DETAIL:  La clé « (insee_code)=(1001) » existe déjà.
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Ville"("city_code", "department_number", "insee_code", "latitude", "longitude")
+VALUES (\'l abergement clemenciat\',\'01\',\'01001\',\'46.153721024\',\'4.925850148\'), (\'l abergement de varey\',\'01\',\'01002\',\'46.009605679\',\'5.428087796\'), (\'amberieu en bugey\',\'01\',\'01004\',\'45.961048852\',\'5.372275427\'), (\'amberieux en dombes\',\'01\',\'01005\',\'45.99616357\',\'4.911967138\'), (\'ambleon\',\'01\',\'01006\',\'45.749886304\',\'5.594584599\'), (\'ambronay\',\'01\',\'01007\',\'46.005690539\',\'5.357748739\'), (\'ambutrix\',\'01\',\'01008\',\'45.936683389\',\'5.332446671\'), (\'andert et condon\',\'01\',\'01009\',\'45.787194157\',\'5.657799976\'), (\'anglefort\',\'01\',\'01010\',\'45.909091467\',\'5.795056945\'), (\'apremont\',\'01\',\'01011\',\'46.205877513\',\'5.657980818\'), (\'aranc\',\'01\',\'01012\',\'46.001293319\',\'5.510946399\'), (\'arandas\',\'01\',\'01013\',\'45.890233979\',\'5.498924738\'), (\'arbent\',\'01\',\'01014\',\'46.283607621\',\'5.690755574\'), (\'arboys en bugey\',\'01\',\'01015\',\'45.712796712\',\'5.64167722\'), (\'arbigny\',\'01\',\'01016\',\'46.477598582\',\'4.960100975\'), (\'argis\',\'01\',\'01017\',\'45.933504727\',\'5.482593252\'), (\'armix\',\'01\',\'01019\',\'45.854492231\',\'5.583031315\'), (\'ars sur formans\',\'01\',\'01021\',\'45.993537592\',\'4.821960428\'), (\'artemare\',\'01\',\'01022\',\'45.869624164\',\'5.690088298\'), (\'asnieres sur saone\',\'01\',\'01023\',\'46.385206065\',\'4.883700297\'), (\'attignat\',\'01\',\'01024\',\'46.286061273\',\'5.179817579\'), (\'bage dommartin\',\'01\',\'01025\',\'46.327468413\',\'4.966993244\'), (\'bage le chatel\',\'01\',\'01026\',\'46.308270333\',\'4.9298452820000005\'), (\'balan\',\'01\',\'01027\',\'45.830979009\',\'5.108003865\'), (\'baneins\',\'01\',\'01028\',\'46.114061723\',\'4.901684997\'), (\'beaupont\',\'01\',\'01029\',\'46.428649695\',\'5.260337095\'), (\'beauregard\',\'01\',\'01030\',\'46.000721971\',\'4.756657208\'), (\'bellignat\',\'01\',\'01031\',\'46.238150086\',\'5.635913808\'), (\'beligneux\',\'01\',\'01032\',\'45.859311798\',\'5.140369014\'), (\'valserhone\',\'01\',\'01033\',\'46.124111549\',\'5.796482369\'), (\'belley\',\'01\',\'01034\',\'45.749882762\',\'5.683910513\'), (\'belleydoux\',\'01\',\'01035\',\'46.253334104\',\'5.785067125\'), (\'valromey sur seran\',\'01\',\'01036\',\'45.918185011\',\'5.6568848240000005\'), (\'benonces\',\'01\',\'01037\',\'45.838144557\',\'5.483119825\'), (\'beny\',\'01\',\'01038\',\'46.319387367\',\'5.282567061\'), (\'beon\',\'01\',\'01039\',\'45.856484934\',\'5.752398693\'), (\'bereziat\',\'01\',\'01040\',\'46.367707398\',\'5.039989868\'), (\'bettant\',\'01\',\'01041\',\'45.937720512\',\'5.365979513\'), (\'bey\',\'01\',\'01042\',\'46.219516565\',\'4.846226251\'), (\'beynost\',\'01\',\'01043\',\'45.839476518\',\'4.99743421\'), (\'billiat\',\'01\',\'01044\',\'46.079406273\',\'5.765548016\'), (\'birieux\',\'01\',\'01045\',\'45.953187919\',\'5.037212561\'), (\'biziat\',\'01\',\'01046\',\'46.226338767\',\'4.941082276\'), (\'blyes\',\'01\',\'01047\',\'45.847070433\',\'5.251661374\'), (\'la boisse\',\'01\',\'01049\',\'45.844628451\',\'5.028332382\'), (\'boissey\',\'01\',\'01050\',\'46.373043501\',\'4.998844748\'), (\'bolozon\',\'01\',\'01051\',\'46.196340526\',\'5.470453285\'), (\'bouligneux\',\'01\',\'01052\',\'46.023044402\',\'4.992313384\'), (\'bourg en bresse\',\'01\',\'01053\',\'46.205013838\',\'5.245593605\'), (\'bourg st christophe\',\'01\',\'01054\',\'45.886247155\',\'5.143599073\'), (\'boyeux st jerome\',\'01\',\'01056\',\'46.036053911\',\'5.463119438\'), (\'boz\',\'01\',\'01057\',\'46.405530214\',\'4.913724\'), (\'bregnier cordon\',\'01\',\'01058\',\'45.641317771\',\'5.616806128\'), (\'brenod\',\'01\',\'01060\',\'46.075616229\',\'5.614402984\'), (\'brens\',\'01\',\'01061\',\'45.713937941\',\'5.689263883\'), (\'bressolles\',\'01\',\'01062\',\'45.86942733\',\'5.101495053\'), (\'brion\',\'01\',\'01063\',\'46.168166789\',\'5.546506151\'), (\'briord\',\'01\',\'01064\',\'45.770630041\',\'5.485482939\'), (\'buellas\',\'01\',\'01065\',\'46.210586509\',\'5.145274303\'), (\'la burbanche\',\'01\',\'01066\',\'45.859942755\',\'5.545817567\'), (\'ceignes\',\'01\',\'01067\',\'46.125618677\',\'5.495155483\'), (\'cerdon\',\'01\',\'01068\',\'46.071947147\',\'5.476107384\'), (\'certines\',\'01\',\'01069\',\'46.13346457\',\'5.262432008\'), (\'cessy\',\'01\',\'01071\',\'46.316089437\',\'6.078030245\'), (\'ceyzeriat\',\'01\',\'01072\',\'46.183403875\',\'5.319678283\'), (\'ceyzerieu\',\'01\',\'01073\',\'45.833507381\',\'5.719105551\'), (\'chalamont\',\'01\',\'01074\',\'46.007577226\',\'5.169368719\'), (\'chaleins\',\'01\',\'01075\',\'46.03393089\',\'4.798634776\'), (\'chaley\',\'01\',\'01076\',\'45.954366591\',\'5.536967199\'), (\'challes la montagne\',\'01\',\'01077\',\'46.122300221\',\'5.457513206\'), (\'challex\',\'01\',\'01078\',\'46.176874001\',\'5.971497204\'), (\'champagne en valromey\',\'01\',\'01079\',\'45.93196511\',\'5.6931331190000005\'), (\'champdor corcelles\',\'01\',\'01080\',\'46.028576252\',\'5.5880089040000005\'), (\'champfromier\',\'01\',\'01081\',\'46.220471277\',\'5.822270927\'), (\'chanay\',\'01\',\'01082\',\'46.005822693\',\'5.768694464\'), (\'chaneins\',\'01\',\'01083\',\'46.093517041\',\'4.854300227\'), (\'chanoz chatenay\',\'01\',\'01084\',\'46.185700461\',\'5.028865152\'), (\'la chapelle du chatelard\',\'01\',\'01085\',\'46.073407767\',\'5.021766424\'), (\'charix\',\'01\',\'01087\',\'46.185606234\',\'5.680768417\'), (\'charnoz sur ain\',\'01\',\'01088\',\'45.874182776\',\'5.221971236\'), (\'chateau gaillard\',\'01\',\'01089\',\'45.972849668\',\'5.307314958\'), (\'chatenay\',\'01\',\'01090\',\'46.025881406\',\'5.204590322\'), (\'chatillon la palud\',\'01\',\'01092\',\'45.974829804\',\'5.241474204\'), (\'chatillon sur chalaronne\',\'01\',\'01093\',\'46.122927177\',\'4.957950327\'), (\'chavannes sur reyssouze\',\'01\',\'01094\',\'46.438056692\',\'5.006564061\'), (\'nivigne et suran\',\'01\',\'01095\',\'46.283759087\',\'5.426610623\'), (\'chaveyriat\',\'01\',\'01096\',\'46.199364763\',\'5.056028558\'), (\'chazey bons\',\'01\',\'01098\',\'45.800812797\',\'5.673644385\'), (\'chazey sur ain\',\'01\',\'01099\',\'45.893242753\',\'5.254787754\'), (\'cheignieu la balme\',\'01\',\'01100\',\'45.822895805\',\'5.604830013\'), (\'chevillard\',\'01\',\'01101\',\'46.110541974\',\'5.581393787\'), (\'chevroux\',\'01\',\'01102\',\'46.382465302\',\'4.96295233\'), (\'chevry\',\'01\',\'01103\',\'46.283052925\',\'6.047291131\'), (\'chezery forens\',\'01\',\'01104\',\'46.222560403\',\'5.872426209\'), (\'civrieux\',\'01\',\'01105\',\'45.922942274\',\'4.88661781\'), (\'cize\',\'01\',\'01106\',\'46.200571572\',\'5.450819845\'), (\'cleyzieu\',\'01\',\'01107\',\'45.902697686\',\'5.432785798\'), (\'coligny\',\'01\',\'01108\',\'46.386677691\',\'5.330424959\'), (\'collonges\',\'01\',\'01109\',\'46.14254416\',\'5.8997020110000005\'), (\'colomieu\',\'01\',\'01110\',\'45.736541941\',\'5.627101669\')
+', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\traitement.php(178): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->importerJson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')

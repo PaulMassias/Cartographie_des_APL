@@ -29,7 +29,7 @@
 
      <style>
         #map { height:580px; }
-        body {margin:0;}
+        body {margin:0; background: ##e6e6e6;}
      </style>
 </head>
 <body>
@@ -52,27 +52,34 @@
                 <select class="form-select" aria-label="Default select example">
                     <option disabled selected>Séléctionnez les professionnels de santé</option>
                     <option value="1">Médecins généralistes</option>
-                    <option value="2">Infirmières</option>
-                    <option value="3">Masseurs-kinésithérapeutes</option>
-                    <option value="4">Sages-femmes</option>
-                    <option value="5">Chirurgiens dentistes</option>
-                </select>
+                    <option value="2" disabled>Infirmières</option>
+                    <option value="3" disabled>Masseurs-kinésithérapeutes</option>
+                    <option value="4" disabled>Sages-femmes</option>
+                    <option value="5" disabled>Chirurgiens dentistes</option>
+                    </select>
                 </div>
                 <div class="col">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="select2" aria-label="Default select example">
                     <option disabled selected>Séléctionnez une tranche d'âge des professionnels de santé</option>
                     <option value="1">Moins de 65 ans</option>
                     <option value="2">Moins de 62 ans</option>
                     <option value="3">Sans borne d'âge</option>
-                </select>
+                    </select>
                 </div>
                 <div class="col">
                     <select class="form-select" aria-label="Default select example">
                     <option disabled selected>Séléctionnez un plage temporelle</option>
-                    <option value="1">2023</option>
-                    <option value="2">2022</option>
+                    <option value="1" disabled>2023</option>
+                    <option value="2" disabled>2022</option>
                     <option value="3">2021</option>
-                </select>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="affMarq" aria-label="Default select example">
+                    <option disabled selected value="1">Afficher les marqueurs</option>
+                    <option value="1">oui</option>
+                    <option value="0">non</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -85,6 +92,13 @@
  <div id="map"></div>
 
  <script>
+    var select2 = document.getElementById('select2');
+    select2.addEventListener('change', updateResult);
+    var affichageMarqueurs = document.getElementById('affMarq');
+    affichageMarqueurs.addEventListener('change', updateResult);
+
+
+
     var mymap = L.map('map').setView([47.08, 2.39], 6);
 
     var base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -97,7 +111,7 @@
     // Créer un tableau pour stocker les intensités des points
     var intensites = [];
 
-    // Ajouter des marqueurs à la carte
+    // Ajouter des marqueurs à la couche correspondant à la heatmap
     <?php foreach ($marqueurs as $marqueur): ?>
         var latLng = [<?= floatval($marqueur['latitude']) ?>, <?= floatval($marqueur['longitude']) ?>];
         var intensite = <?= floatval($marqueur['APL_aux_medecins_generalistes']) ?>; // Remplacez 'intensite' par le nom de votre champ d'intensité
@@ -107,24 +121,18 @@
 
     // Définir une échelle de couleurs personnalisée
     var gradient = {
-    0.0: 'purple',
-    0.2: 'blue',
-    0.4: 'green',
-    0.6: 'yellow',
-    0.8: 'red',
-    1.0: 'black'
-};
+    0.0: 'black',
+    0.2: 'red',
+    0.4: 'yellow',
+    0.6: 'green',
+    0.8: 'blue',
+    1.0: 'purple'
+    };
 
 
-    function calculateRadius(zoom) {
-    // Tu peux ajuster ces valeurs selon tes besoins
-    var baseRadius = 20;
-    var minZoom = 10;  // Le niveau de zoom à partir duquel le radius sera constant
+    
 
-    return zoom >= minZoom ? baseRadius * Math.pow(2, zoom - minZoom) : baseRadius;
-}
-
-    // Normaliser les intensités pour qu'elles soient entre 0 et 1
+    //Permet de contraster les valeurs de la heatmap
     var maxIntensite = 0.1;
 
 
@@ -136,7 +144,10 @@
         blur: 20,
         gradient: gradient,
         max: maxIntensite,
-    }).addTo(HeatMap);              
+    }).addTo(HeatMap);
+    
+    
+    /*---------------------------------------------------------------------------------------------------------------------*/
 
     var marqueursAPL = L.markerClusterGroup();
 
@@ -157,16 +168,95 @@
         .addTo(marqueursAPL);
     <?php endforeach; ?>
 
+    var marqueursAPL65 = L.markerClusterGroup();
+
+    <?php foreach ($marqueurs as $marqueur): ?>
+        // Convertir la valeur de l'APL en un nombre décimal
+        var aplValue = <?= floatval(str_replace(',', '.', $marqueur['APL_aux_medecins_generalistes65'])) ?>;
+
+
+        // Définir la couleur en fonction de la valeur de l'APL
+        var couleur = 'hsl(160, 100%, ' + (50 - aplValue * 10) + '%)';
+
+        L.circleMarker([<?= $marqueur['latitude'] ?>, <?= $marqueur['longitude'] ?>], {
+            radius: 8,
+            color: couleur,
+            fillOpacity: 0.7
+        })
+        .bindPopup('Nom de la ville : <?= $marqueur['city_code'] ?><br>APL: <?= $marqueur['APL_aux_medecins_generalistes65'] ?>')
+        .addTo(marqueursAPL65);
+    <?php endforeach; ?>
+
+    var marqueursAPL62 = L.markerClusterGroup();
+
+    <?php foreach ($marqueurs as $marqueur): ?>
+        // Convertir la valeur de l'APL en un nombre décimal
+        var aplValue = <?= floatval(str_replace(',', '.', $marqueur['APL_aux_medecins_generalistes62'])) ?>;
+
+
+        // Définir la couleur en fonction de la valeur de l'APL
+        var couleur = 'hsl(160, 100%, ' + (50 - aplValue * 10) + '%)';
+
+        L.circleMarker([<?= $marqueur['latitude'] ?>, <?= $marqueur['longitude'] ?>], {
+            radius: 8,
+            color: couleur,
+            fillOpacity: 0.7
+        })
+        .bindPopup('Nom de la ville : <?= $marqueur['city_code'] ?><br>APL: <?= $marqueur['APL_aux_medecins_generalistes62'] ?>')
+        .addTo(marqueursAPL62);
+    <?php endforeach; ?>
+
+
+
+    
+
 
     var baseMaps = {
-        HeatMap,
+        mymap,
+        HeatMap
     };
 
-    var overlayMaps = {
+    /*var overlayMaps = {
         "Marqueurs": marqueursAPL,
-    };
+        "Marqueurs62": marqueursAPL62,
+        "Marqueurs65": marqueursAPL65,
+    };*/
 
-    var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+    var layerControl = L.control.layers(baseMaps).addTo(mymap);
+
+
+
+    function updateResult(){
+
+        mymap.removeLayer(marqueursAPL65);
+        mymap.removeLayer(marqueursAPL62);
+        mymap.removeLayer(marqueursAPL);
+        var value2 = select2.value;
+        var affichage = affichageMarqueurs.value;
+        
+
+        if(affichage=="1"){
+            switch(select2.value){
+                case '1':
+                    marqueursAPL65.addTo(mymap);
+                    break;
+                case '2':
+                    marqueursAPL62.addTo(mymap);
+                    break;
+                case '3':
+                    marqueursAPL.addTo(mymap);
+                    break;
+            }
+        }
+    } 
+
+
+    function calculateRadius(zoom) {
+    // Tu peux ajuster ces valeurs selon tes besoins
+    var baseRadius = 20;
+    var minZoom = 10;  // Le niveau de zoom à partir duquel le radius sera constant
+    return zoom >= minZoom ? baseRadius * Math.pow(2, zoom - minZoom) : baseRadius;
+    }
 
 </script>
 
