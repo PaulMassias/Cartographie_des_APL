@@ -30,7 +30,7 @@ class traitement extends BaseController
 
         // Limiter le nombre de lignes lues 
         //( Cette ligne peut être décommenté, et en rajoutant une condition dans la boucle vous pourrez éviter de traiter tout les fichiers => sert au débogage)
-        //$limit = 20;
+        $limit = 20;
 
         // Ouvrir le fichier CSV en mode lecture
         $handle = fopen($cheminCSV, 'r');
@@ -42,7 +42,7 @@ class traitement extends BaseController
         $count = 0;
 
         // Lire le fichier CSV ligne par ligne
-        while (($row = fgetcsv($handle)) !== false){ //&& $count < $limit) {
+        while (($row = fgetcsv($handle)) !== false && $count < $limit) {
 
             $element = array_combine($header, $row);
 
@@ -74,16 +74,33 @@ class traitement extends BaseController
             }
 
             // Incrémenter le compteur
-            //$count++;
+            $count++;
         }
 
         // Fermer le fichier CSV
         fclose($handle);
 
-        // Vous avez maintenant les données fusionnées dans $resultat
-        //return view('welcome_message', ['marqueurs' => $resultat]);
+        // données fusionnées dans $resultat
         return view('carto', ['marqueurs' => $resultat]);
-        //print_r($resultat);
+    }
+
+    public function import() {
+        $file = $this->request->getFile('csv_file');
+    
+        // Check if a file was uploaded
+        if ($file && $file->isValid()) {
+            $destination = ROOTPATH . 'public/nettoye.csv';
+
+            if (file_exists($destination)) {
+                unlink($destination);
+            }    
+
+            // Move the uploaded file to the public directory
+            $file->move(ROOTPATH . 'public', 'nettoye.csv');
+    
+            // Perform data reloading logic here
+            return redirect()->route('traitement::fusionnerFichiers');
+        }
     }
 
 

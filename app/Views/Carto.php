@@ -28,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
 
      <style>
-        #map { height:580px; }
+        #map { height:580px;}
         body {margin:0; background: ##e6e6e6;}
      </style>
 </head>
@@ -81,12 +81,22 @@
                     <option value="0">non</option>
                     </select>
                 </div>
+                <div class="col">
+                <form method="post" action="/traitement/import" enctype="multipart/form-data">
+                    <div class="form-group" >
+                    <input style="position: relative; left: 30px;padding:10px" type="file" name="csv_file" accept=".csv">
+                    <br>
+                    <button style="position: relative; left: 25px;" class="btn btn-primary" type="submit">Importer</button>
+                    </div> 
+                </form>
+                </div>
             </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 
  <div id="map"></div>
@@ -206,11 +216,7 @@
         .addTo(marqueursAPL62);
     <?php endforeach; ?>
 
-
-
     
-
-
     var baseMaps = {
         mymap,
         HeatMap
@@ -250,12 +256,11 @@
         }
     } 
 
-
+    // fonction ajustant le radius en fonction du zoom
     function calculateRadius(zoom) {
-    // Tu peux ajuster ces valeurs selon tes besoins
     var baseRadius = 20;
     var minZoom = 10;  // Le niveau de zoom à partir duquel le radius sera constant
-    return zoom >= minZoom ? baseRadius * Math.pow(2, zoom - minZoom) : baseRadius;
+    return zoom >= minZoom ? baseRadius * Math.pow(2, zoom - minZoom) : baseRadius; 
     }
 
 </script>

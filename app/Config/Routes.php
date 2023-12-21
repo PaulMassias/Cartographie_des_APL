@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/traitement', 'traitement::fusionnerFichiers');
 $routes->get('/importerjson','traitement::importerJson');
+$routes->post('/traitement/import', 'traitement::import');

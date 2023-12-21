@@ -1,0 +1,24 @@
+CRITICAL - 2023-12-21 16:54:40 --> Call to undefined method App\Controllers\traitement::reloadData()
+in APPPATH\Controllers\traitement.php on line 96.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->import()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-21 16:56:40 --> The route for "/traitement" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/traitement')
+ 2 APPPATH\Controllers\traitement.php(96): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->import()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
+CRITICAL - 2023-12-21 17:38:08 --> Undefined variable: count
+in APPPATH\Controllers\traitement.php on line 45.
+ 1 APPPATH\Controllers\traitement.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: count', 'C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\app\\Controllers\\traitement.php', 45, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\traitement->fusionnerFichiers()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\traitement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\D4rks\\Desktop\\TestInstallCI4\\project-root\\public\\index.php')
