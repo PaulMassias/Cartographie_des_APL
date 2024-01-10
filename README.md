@@ -25,4 +25,4 @@ Enfin pour voir le code du front-end allez ouvrir le fichier suivant App/Views/C
 
 ## Recherches documentaires
 
-Vous trouverez aussi dans ce projet les différents rapports et recherches documentaires que nous avons pu mener, vous les retrouverez dans le dossier :"Recherche" à la racine du projet.
+Vous trouverez aussi dans ce projet les différents rapports et recherches documentaires que nous avons pu mener, vous les retrouverez dans le dossier :"Recherche" à la racine du projet. Dans ce dossier vous trouverez aussi les éléments relatifs au calcul de l'APL dans l'archive "calcul.zip".
