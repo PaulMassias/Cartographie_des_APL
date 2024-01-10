@@ -9,7 +9,7 @@
 
     
 
-    <!-- Essai de leaflet -->
+    <!-- Packages de leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
@@ -108,13 +108,16 @@
     affichageMarqueurs.addEventListener('change', updateResult);
 
 
-
+// Création de la couche de carte
     var mymap = L.map('map').setView([47.08, 2.39], 6);
 
     var base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(mymap);
+///////////////////////////////////
 
+
+//création de la heatmap
     // Créer un tableau pour stocker les coordonnées des points
     var points = [];
 
@@ -139,9 +142,6 @@
     1.0: 'purple'
     };
 
-
-    
-
     //Permet de contraster les valeurs de la heatmap
     var maxIntensite = 0.1;
 
@@ -159,6 +159,8 @@
     
     /*---------------------------------------------------------------------------------------------------------------------*/
 
+
+//Création des différentes couches utilisées
     var marqueursAPL = L.markerClusterGroup();
 
     <?php foreach ($marqueurs as $marqueur): ?>
@@ -222,16 +224,10 @@
         HeatMap
     };
 
-    /*var overlayMaps = {
-        "Marqueurs": marqueursAPL,
-        "Marqueurs62": marqueursAPL62,
-        "Marqueurs65": marqueursAPL65,
-    };*/
-
     var layerControl = L.control.layers(baseMaps).addTo(mymap);
 
 
-
+// Fonction permettant un rafraichissement dynamique des marqueurs de la carte ( sans rechargement )
     function updateResult(){
 
         mymap.removeLayer(marqueursAPL65);
@@ -265,7 +261,7 @@
 
 </script>
 
-
+<!-- Liens pour Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 

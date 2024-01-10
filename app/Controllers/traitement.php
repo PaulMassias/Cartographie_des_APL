@@ -12,6 +12,7 @@ ini_set('max_execution_time', 1000); // 0 = Unlimited
 
 class traitement extends BaseController
 {
+    // Cette fonction permet d'extraire les données souhaitées des fichiers et les retourne à la vue afin de les exploiter
         public function fusionnerFichiers(){
         // Chemin vers les fichiers
         $cheminCSV = FCPATH . 'nettoye.csv';
@@ -39,10 +40,10 @@ class traitement extends BaseController
         $header = fgetcsv($handle);
 
         // Initialiser le compteur
-        $count = 0;
+        //$count = 0;
 
         // Lire le fichier CSV ligne par ligne
-        while (($row = fgetcsv($handle)) !== false && $count < $limit) {
+        while (($row = fgetcsv($handle)) !== false){ //&& $count < $limit) {
 
             $element = array_combine($header, $row);
 
@@ -74,7 +75,7 @@ class traitement extends BaseController
             }
 
             // Incrémenter le compteur
-            $count++;
+            //$count++;
         }
 
         // Fermer le fichier CSV
@@ -84,6 +85,7 @@ class traitement extends BaseController
         return view('carto', ['marqueurs' => $resultat]);
     }
 
+    //Cette fonction permet d'importer les fichiers csv pour en faire la nouvelle référence du site
     public function import() {
         $file = $this->request->getFile('csv_file');
     
@@ -104,6 +106,7 @@ class traitement extends BaseController
     }
 
 
+    // Cette fonction m'a aidé à commencer l'import de données vers une base de données Postgres
     public function importerJson(){
 
         $cheminCSV = FCPATH . 'nettoye.csv';
@@ -169,8 +172,6 @@ class traitement extends BaseController
 
 
         $modele = new VilleModel();
-        //print_r($resultat);
-        //die();
         $modele->insertBatch($resultat);
     }
 
