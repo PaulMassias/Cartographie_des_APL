@@ -12,7 +12,7 @@ puis la commande
 
 Rendez vous ensuite à cette adresse : http://localhost:8081/traitement et vous verrez apparaître la page principale de l'application après un certain temps de chargement ( environ 2-3 minutes ).
 
-##Fonctionnement global
+## Fonctionnement global
 L'application se découpe en 3 parties:
 1. Données
 Les données dans l'application sont pour l'instant représenté commedes fichiers que vous truverez dans le répertoire "public" de votre projet. Le premier est le fichier cities.json qui est tiré de [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/villes-de-france/) et qui décrit les différentes villes de france en format json. Le second est le fichier nettoye.csv, ce dernier reprend lui les informations concernant les APL extraite depuis l'applicatif [Shiny](https://drees.shinyapps.io/carto-apl/). 
