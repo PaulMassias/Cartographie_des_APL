@@ -1,67 +1,28 @@
-# CodeIgniter 4 Application Starter
+# Cartographie des Accessibilités Potentielles Localisées
 
-## What is CodeIgniter?
+## Installation
+Pour pouvoir installer l'application et la faire tourner localement en serveur de développement il vous faut télécharger CodeIgniter4 à [cette adresse](https://codeigniter.com/user_guide/installation/installing_manual.html). Une fois la version la plus récente téléchargé, vous devrez cloner ce porjet dans un dossier vierge de votre choix. Ensuite glissez le dossier vendor de l'archive CodeIgniter 4 dans le projet cloné. 
+Ensuite depuis un terminal et à la racine du projet, lancez la commande 
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+    npm install
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+puis la commande
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+    php spark serve
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+Rendez vous ensuite à cette adresse : http://localhost:8081/traitement et vous verrez apparaître la page principale de l'application après un certain temps de chargement ( environ 2-3 minutes ).
 
-## Installation & updates
+## Fonctionnement global
+L'application se découpe en 3 parties:
+1. Données
+Les données dans l'application sont pour l'instant représenté commedes fichiers que vous truverez dans le répertoire "public" de votre projet. Le premier est le fichier cities.json qui est tiré de [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/villes-de-france/) et qui décrit les différentes villes de france en format json. Le second est le fichier nettoye.csv, ce dernier reprend lui les informations concernant les APL extraite depuis l'applicatif [Shiny](https://drees.shinyapps.io/carto-apl/). 
+   
+2. Traitement
+Vous trouverez le contrôleur principal dans App/Controllers il s'appelle traitement.php et vous trouverez dans ce dernier le "back-office". Vous y trouverez des fonctions pour la récupération de données, pour l'import de fichiers CSV ou encore pour l'export de données depuis un CSV vers une BDD.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+3. Vue
+Enfin pour voir le code du front-end allez ouvrir le fichier suivant App/Views/Carto.php. Ce fichier se compose d'une première partie de html qui crée l'ossature du site et en dessous vous trouverez une partie conséquente de traitements pour rendre les données utilisables pour le plugin Leaflet.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## Recherches documentaires
 
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Vous trouverez aussi dans ce projet les différents rapports et recherches documentaires que nous avons pu mener, vous les retrouverez dans le dossier :"Recherche" à la racine du projet.
