@@ -14,13 +14,13 @@ Rendez vous ensuite à cette adresse : http://localhost:8081/traitement et vous 
 
 ## Fonctionnement global
 L'application se découpe en 3 parties:
-1. ###Données
+1. ### Données
 Les données dans l'application sont pour l'instant représenté commedes fichiers que vous truverez dans le répertoire "public" de votre projet. Le premier est le fichier cities.json qui est tiré de [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/villes-de-france/) et qui décrit les différentes villes de france en format json. Le second est le fichier nettoye.csv, ce dernier reprend lui les informations concernant les APL extraite depuis l'applicatif [Shiny](https://drees.shinyapps.io/carto-apl/). 
    
-2. ###Traitement
+2. ### Traitement
 Vous trouverez le contrôleur principal dans App/Controllers il s'appelle traitement.php et vous trouverez dans ce dernier le "back-office". Vous y trouverez des fonctions pour la récupération de données, pour l'import de fichiers CSV ou encore pour l'export de données depuis un CSV vers une BDD.
 
-3. ###Vue
+3. ### Vue
 Enfin pour voir le code du front-end allez ouvrir le fichier suivant App/Views/Carto.php. Ce fichier se compose d'une première partie de html qui crée l'ossature du site et en dessous vous trouverez une partie conséquente de traitements pour rendre les données utilisables pour le plugin Leaflet.
 
 ## Recherches documentaires
